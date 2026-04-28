@@ -1,13 +1,13 @@
 <div class="container-fluid">
-<h2 class="h3 mb-4 text-gray-800"><b><i class="fas fa-edit"></i> Edit Buku </b></h2>
+<h2 class="h3 mb-4 text-gray-800"><b><i class="fas fa-edit"></i> Edit Anggota </b></h2>
 
 <div class="card shadow">
     <div class="card-body">
 
-<form method="post" action="<?= site_url('buku/update/'.$buku->kode_buku);?>">
+<form method="post" action="<?= site_url('anggota/update/'.$anggota->id_anggota);?>">
     <div class="form-group">
-    <input type="hidden" name="kode_buku" value="<?= $buku->kode_buku; ?>">
-    <label>Judul Buku</label><br>
+    <input type="hidden" name="id_anggota" value="<?= $anggota->id_anggota; ?>">
+    <label>Nama Anggota</label><br>
     <input type="text" name="judul_buku" class="form-control" value="<?= $buku->judul_buku;?>" required>
     </div>
 
